@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/style.css" rel="stylesheet" />
+
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h3> <span><a href="index.html">Home</a></span>  
+            <span><a href="images.html">Images</a></span>  
+            <span><a href="table.html">Table</a></span>  
+            <span><a href="forms.html">Forms</a> </span></h3>
+    
+        <h2 class="heading">Add New Product Form</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Product Code</td><td><input type="text" size="30"/></td>
+                </tr>
+                <tr>    
+                    <td>Product Desc</td><td><textarea rows="2" size="30"></textarea></td>
+                </tr>
+                <tr>    
+                    <td>UnitPrice</td><td><input type="text" size="30"/></td>
+                </tr>
+                    <tr>    
+                    <td>Quantity On Hand</td><td><input type="text" size="30"/></td>
+                </tr>
+                <tr>    
+                    <td>Category</td>
+                    <td>
+                        <select>
+                            <option value="stationery">Stationery</option>
+                            <option value="Beverages">Beverages</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Apparels">Apparels</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Product Status</td>
+                    <td><input type="radio" name="pstatus" value="A"> Available <input type="radio" name="pstatus" value="N"> Not Available</td>
+                </tr>                
+                <tr>
+                    <td>Imported ?</td>
+                    <td><input type="checkbox" name="imported" value="yes"> </td>
+                </tr>                
+                <tr>
+                    <td><input type="button" value="Add Product"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

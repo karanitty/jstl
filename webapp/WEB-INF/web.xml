@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>productmanagement</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>WelcomeServlet</servlet-name>
+  	<servlet-class>com.ibsplc.servlet.WelcomeServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>ProductSearchServlet</servlet-name>
+  	<servlet-class>com.ibsplc.servlet.ProductSearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>CategorySearchServlet</servlet-name>
+  	<servlet-class>com.ibsplc.servlet.CategorySearchServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>ListProductServlet</servlet-name>
+  	<servlet-class>com.ibsplc.servlet.ListProductServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>AddProductServlet</servlet-name>
+  	<servlet-class>com.ibsplc.servlet.AddProductServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>WelcomeServlet</servlet-name>
+  	<url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ProductSearchServlet</servlet-name>
+  	<url-pattern>/productSearch</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>CategorySearchServlet</servlet-name>
+  	<url-pattern>/categorySearch</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>ListProductServlet</servlet-name>
+  	<url-pattern>/productlist</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>AddProductServlet</servlet-name>
+  	<url-pattern>/addproduct</url-pattern>
+  </servlet-mapping>
+</web-app>
